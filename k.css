@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    position: absolute;
+    width: 95%;
+}
+
+.logo {
+    color: aqua;
+    font-size: 30px;
+    text-transform: capitalize;
+
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+
+
+}
+
+body {
+    background: linear-gradient(#200016, #10001f);
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+header ul li a:hover {
+    background-color: aliceblue;
+    color: rgb(219, 46, 213)
+}
+
+.khaled {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.khaled img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+
+.K {
+    color: aliceblue;
+    font-size: 25px;
+    text-transform: capitalize;
+    transform: translateY(-140px);
+
+}
+
+.c {
+    color: white;
+    padding: 30px;
+
+
+}
+
+.c h2 {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.c p {
+    margin: 20px;
+    color: aliceblue;
+}
+
+.khaled::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, #200016, transparent)
+}
